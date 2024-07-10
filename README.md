@@ -18,11 +18,16 @@ O bot implementa um sistema de captcha para novos membros que entram em um servi
    ```
 
 3. **Inicie o Bot:**
-   - Execute o bot do Telegram iniciando-o com o seguinte comando:
+   - Para usar o `NODE`, inicie o bot com o seguinte comando:
     ```bash
     npm start
     ```
 
+    - Para usar o `NODEMON`, inicie o bot com o seguinte comando:
+    ```bash
+    npm test
+    ```
+    
 4. **Funcionamento**:
    - Quando um novo membro entra no servidor Discord, o bot gera um captcha aleatório usando a função `createCaptcha` definida no segundo código que você forneceu. Esse captcha é uma imagem PNG gerada dinamicamente com um texto aleatório.
    - O bot envia a imagem do captcha para o novo membro através de uma mensagem privada, junto com instruções para resolver o captcha em até 60 segundos.
